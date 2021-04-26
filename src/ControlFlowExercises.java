@@ -46,16 +46,20 @@ public class ControlFlowExercises {
         // }
         //3
         {
+            boolean more;
             do{
                 System.out.println("What number would you like to go up to? ");
                 int upTo = in.nextInt();
-                System.out.println("Here is your table: \n");
+                System.out.println("\nHere is your table: \n");
                 System.out.printf("%7s | %7s | %5s%n", "number", "squared", "cubed");
                 System.out.printf("%7s | %7s | %5s%n", "------", "-------", "-----");
                 for (int i = 1; i <= upTo; i++){
                     System.out.printf("%7d | %7d | %5d%n", i, (int) Math.pow(i, 2), (int) Math.pow(i, 3));
                 }
-            } while(false);
+                System.out.println("\nWould you like to continue? (Y/N) ");
+                String choice = in.next();
+                more = choice.equalsIgnoreCase("Y");
+            } while(more);
         }
      }
 }
