@@ -27,35 +27,35 @@ public class ControlFlowExercises {
         //         System.out.println(i);
         //     }
         // }
-        //2
-        {
-            for (int i = 1; i <= 100; i++){
-                if (i % 5 == 0 && i % 3 == 0){
-                    System.out.println("FizzBuzz");
-                }
-                else if (i % 3 == 0){
-                    System.out.println("Fizz");
-                }
-                else if (i % 5 == 0){
-                    System.out.println("Buzz");
-                }
-                else{
-                    System.out.println(i);
-                }
-            }
-        }
-        // //3
+        // //2
         // {
-        //     do{
-        //         System.out.println("What number would you like to go up to? ");
-        //         int upTo = in.nextInt();
-        //         System.out.println("Here is your table: \n");
-        //         System.out.printf("%7s | %7s | %5s%n", "number", "squared", "cubed");
-        //         System.out.printf("%7s | %7s | %5s%n", "------", "-------", "-----");
-        //         for (int i = 1; i <= upTo; i++){
-        //             System.out.printf("%7d | %7d | %5d%n", i, (int) Math.pow(i, 2), (int) Math.pow(i, 3));
+        //     for (int i = 1; i <= 100; i++){
+        //         if (i % 5 == 0 && i % 3 == 0){
+        //             System.out.println("FizzBuzz");
         //         }
-        //     } while(false);
+        //         else if (i % 3 == 0){
+        //             System.out.println("Fizz");
+        //         }
+        //         else if (i % 5 == 0){
+        //             System.out.println("Buzz");
+        //         }
+        //         else{
+        //             System.out.println(i);
+        //         }
+        //     }
         // }
+        //3
+        {
+            do{
+                System.out.println("What number would you like to go up to? ");
+                int upTo = in.nextInt();
+                System.out.println("Here is your table: \n");
+                System.out.printf("%7s | %7s | %5s%n", "number", "squared", "cubed");
+                System.out.printf("%7s | %7s | %5s%n", "------", "-------", "-----");
+                for (int i = 1; i <= upTo; i++){
+                    System.out.printf("%7d | %7d | %5d%n", i, (int) Math.pow(i, 2), (int) Math.pow(i, 3));
+                }
+            } while(false);
+        }
      }
 }
