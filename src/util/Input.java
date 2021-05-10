@@ -27,8 +27,17 @@ public class Input {
         }
     }
     public int getInt(){
-        System.out.println("Enter an integer: ");
-        return scanner.nextInt();
+        int input;
+        while (true){
+            try{
+                System.out.println("Enter an integer: ");
+                input = Integer.valueOf(scanner.next());
+                return input;
+            }
+            catch(Exception e){
+                System.out.println("That's not an integer...");
+            }
+        }
     }
     public double getDouble(double min, double max){
         double input;
@@ -41,7 +50,16 @@ public class Input {
         }
     }
     public double getDouble(){
-        System.out.println("Enter a double: ");
-        return scanner.nextDouble();
+        double input;
+        while (true){
+            try{
+                System.out.println("Enter an integer: ");
+                input = Double.valueOf(scanner.next());
+                return input;
+            }
+            catch(Exception e){
+                System.out.println("That's not an integer...");
+            }
+        }
     }
 }
